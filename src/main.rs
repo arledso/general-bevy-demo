@@ -5,6 +5,7 @@
 //try to kill stuff (??)
 //render stuff with vectors
 mod kinematics;
+mod quadtree;
 mod movement;
 mod physics;
 mod config;

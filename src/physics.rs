@@ -1,4 +1,5 @@
 use crate::kinematics::*;
+use crate::quadtree::*;
 use bevy::prelude::*;
 
 //plugin
@@ -39,3 +40,10 @@ fn apply_friction(mut query: Query<(&mut Velocity, &Friction)>, time: Res<Time>)
 
 //add collisions next
 //try if position.in(object) then set position to propper position given vel, and set vel.y = 0.
+
+fn apply_collision_responses(
+    mut query: Query<(&mut Transform, &mut Velocity, &Vertices, &CollisionGroup)>
+    ) 
+    {
+        
+}
