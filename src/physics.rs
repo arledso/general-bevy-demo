@@ -21,7 +21,10 @@ impl Plugin for PhysicsPlugin {
 pub struct Friction(pub f32, pub bool);
 #[derive(Component)]
 pub struct Gravity(pub f32);
-
+#[derive(Component)]
+pub struct Vertices(pub Vec<Vec2>);
+#[derive(Component)]
+pub struct CollisionGroup(String);
 
 //systems
 
